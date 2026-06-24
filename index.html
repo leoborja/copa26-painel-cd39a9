@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>🏆 Copa 2026 — Meus Painéis</title>
+<style>
+  :root{ --bg:#0d1326; --card:#161e38; --txt:#e8ecf8; --muted:#8b96b8; --accent:#36e0a1; --bet:#ffd166; }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ background:var(--bg); color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif;
+    min-height:100vh; padding:32px 18px; display:flex; flex-direction:column; align-items:center; }
+  h1{ font-size:1.7rem; text-align:center; margin-bottom:4px; }
+  .sub{ color:var(--muted); text-align:center; margin-bottom:28px; font-size:.92rem; }
+  .menu{ width:100%; max-width:440px; display:flex; flex-direction:column; gap:14px; }
+  a.card{ display:block; background:var(--card); border-radius:16px; padding:20px 22px; text-decoration:none;
+    color:var(--txt); box-shadow:0 4px 16px rgba(0,0,0,.35); border:1px solid #243056;
+    transition:transform .12s, border-color .12s; }
+  a.card:active{ transform:scale(.98); }
+  a.card .emoji{ font-size:1.8rem; }
+  a.card .ttl{ font-size:1.15rem; font-weight:700; margin:6px 0 3px; color:var(--accent); }
+  a.card.bet .ttl{ color:var(--bet); }
+  a.card .desc{ color:var(--muted); font-size:.85rem; line-height:1.4; }
+  footer{ color:var(--muted); font-size:.78rem; margin-top:30px; text-align:center; }
+</style>
+</head>
+<body>
+  <h1>🏆 Copa do Mundo 2026</h1>
+  <p class="sub">Meus painéis — bolão, apostas e jogos</p>
+  <div class="menu">
+    <a class="card" href="bolao.html">
+      <div class="emoji">📊</div>
+      <div class="ttl">Bolão &amp; Apostas</div>
+      <div class="desc">Palpites por grupo, placar do bolão, classificações ao vivo, chance de cada aposta e os 11 bilhetes.</div>
+    </a>
+    <a class="card" href="central.html">
+      <div class="emoji">⚽</div>
+      <div class="ttl">Central de Jogos</div>
+      <div class="desc">Hub de jogos da Copa 2026.</div>
+    </a>
+    <a class="card bet" href="banca.html">
+      <div class="emoji">💰</div>
+      <div class="ttl">Banca</div>
+      <div class="desc">Controle da banca de apostas.</div>
+    </a>
+  </div>
+  <footer>Atualizado em 24/06/2026 · gerado localmente</footer>
+</body>
+</html>
