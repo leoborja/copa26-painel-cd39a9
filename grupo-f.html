@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang=pt-BR><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>📊 Grupo F — Análise Completa</title><style>
+:root{--bg:#0d1326;--card:#161e38;--card2:#1c2547;--txt:#e8ecf8;--muted:#8b96b8;--accent:#36e0a1;--bet:#ffd166;--green:#2ecc71;--red:#e74c3c}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,'Segoe UI',Roboto,sans-serif;padding:14px;max-width:760px;margin:0 auto}
+h1{text-align:center;font-size:1.3rem}.sub{text-align:center;color:var(--muted);font-size:.76rem;margin-bottom:14px}
+.card{background:var(--card);border-radius:13px;padding:14px;margin-bottom:14px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.card h2{font-size:1rem;color:var(--accent);margin-bottom:12px}.card h2 small{color:var(--muted);font-weight:400;font-size:.72rem}
+.cols{display:flex;gap:10px;margin-bottom:12px}.tcol{flex:1;background:var(--card2);border-radius:10px;padding:10px}
+.tn{font-weight:700;font-size:.85rem;margin-bottom:8px}
+.qs div{display:flex;justify-content:space-between;align-items:baseline;font-size:.72rem;padding:3px 0;border-bottom:1px solid #222c52}
+.qs span{color:var(--muted);font-size:.66rem}.qs b{font-size:.78rem}
+table.pl{width:100%;border-collapse:collapse;font-size:.7rem;margin-top:8px}
+table.pl th{color:var(--muted);font-weight:600;font-size:.6rem;padding:3px 2px;border-bottom:1px solid #2a3560}
+table.pl td{padding:3px 2px;text-align:center;border-bottom:1px solid #222c52}table.pl td:first-child,table.pl th:first-child{text-align:left}
+.sparkls{font-size:.62rem;color:var(--muted);margin-top:7px;line-height:1.5}
+.leit p{font-size:.82rem;line-height:1.55;padding:5px 0;border-bottom:1px solid #1e2747}.leit p:last-child{border:none}.leit b{color:#dfe6f7}
+.pick{background:#10233a;border-left:3px solid var(--accent);border-radius:8px;padding:8px 10px!important;margin-top:6px}
+.combos hr{border:none;border-top:1px solid #2a3560;margin:12px 0}
+.tier{font-size:.82rem;padding:6px 0;line-height:1.5}
+.t1,.t2,.t3{font-size:.62rem;font-weight:700;border-radius:6px;padding:2px 8px;margin-right:6px}
+.t1{background:#0a4d2e;color:#bff5d8}.t2{background:#3a3015;color:var(--bet)}.t3{background:#3a1520;color:#f5b8c0}
+.cb{background:#221d10;border:1px solid #4a3d1a;border-left:3px solid var(--bet);border-radius:8px;padding:9px 11px;margin-bottom:8px;font-size:.82rem;line-height:1.4}.cb small{color:#bdb18a}
+.warn{border-left:3px solid var(--red)}.warn h2{color:var(--red)}.warn p{font-size:.8rem;line-height:1.5;margin-bottom:6px}.warn b{color:#fff}
+.extra{margin-top:12px;border-top:1px solid #2a3560;padding-top:10px}
+.score{background:#10233a;border-radius:8px;padding:8px 11px;font-size:.85rem;text-align:center;margin-bottom:10px}
+table.lines,table.prob{width:100%;border-collapse:collapse;font-size:.74rem;margin-bottom:10px}
+table.lines th,table.prob th{color:var(--muted);font-size:.62rem;padding:4px 3px;border-bottom:1px solid #2a3560;text-align:center}
+table.lines th:first-child,table.prob th:first-child{text-align:left}
+table.lines td,table.prob td{padding:5px 3px;text-align:center;border-bottom:1px solid #222c52}
+table.lines td:first-child,table.prob td:first-child{text-align:left}
+td.g{color:var(--green);font-weight:700}td.y{color:var(--bet);font-weight:700}td.r{color:var(--red)}
+.nav{display:flex;gap:8px;margin-bottom:14px;justify-content:center}
+.nav a{flex:1;text-align:center;padding:9px;border-radius:10px;background:var(--card2);color:var(--accent);text-decoration:none;font-size:.8rem;font-weight:700;border:1px solid #2a3560}
+.dia{background:linear-gradient(135deg,#0a4d2e,#0e3b6b);border:1px solid var(--accent)}.dia h2{color:#fff}
+.dia .big{font-size:.95rem;line-height:1.6;font-weight:700}.dia small{color:#bff5d8;font-weight:400}
+.gloss{font-size:.74rem;color:var(--muted);line-height:1.7}.gloss b{color:var(--txt)}
+
+.oddsbox{margin-top:10px;background:#10233a;border-radius:9px;padding:10px 12px}
+.ob-h{font-size:.8rem;font-weight:700;color:var(--accent);margin-bottom:6px}
+table.ob{width:100%;border-collapse:collapse;font-size:.76rem}
+table.ob th{color:var(--muted);font-size:.62rem;padding:3px 4px;border-bottom:1px solid #2a3560;text-align:center}
+table.ob th:first-child{text-align:left}
+table.ob td{padding:4px;text-align:center;border-bottom:1px solid #1c2645}table.ob td:first-child{text-align:left}
+.ob-n{font-size:.68rem;color:var(--muted);margin-top:6px}.ob-n b{color:var(--txt)}
+footer{text-align:center;color:var(--muted);font-size:.66rem;margin-top:6px}
+</style></head><body>
+<h1>📊 Grupo F — Análise Completa</h1>
+<p class=sub>Rodada 3 · 25/06 · 20h (simultâneos) · dados ESPN · mercados de TIME</p>
+<div class=nav><a href="central.html">⚽ Central</a><a href="grupo-a.html">📊 A</a><a href="grupo-c.html">📊 C</a><a href="grupo-e.html">📊 E</a></div>
+<div class='card dia'><h2>🏆 Aposta do Dia (Grupo F) — só TIME</h2>
+<div class=big>Holanda vence · Japão não perde · Tunísia +1.5 cartões<br>
+<small>~6-8x · favorito + favorito + cartão de time (+58% ROI). ZERO prop de jogador — lição do Grupo E aplicada. Nada some do jogo.</small></div></div>
+<div class=card><h2>🇳🇱 Holanda × 🇹🇳 Tunísia <small>20h · atropelo holandês</small></h2>
+<div class=cols><div class=tcol><div class=tn style='color:#ff7a3c'>🇳🇱 Holanda</div>
+    <div class=qs>
+      <div><span>Gols feitos/sof</span><b>2.5 / 0.8</b></div>
+      <div><span>Over 2.5 · BTTS</span><b>7/10 · 6/10</b></div>
+      <div><span>Clean sheets</span><b>3/10</b></div>
+      <div><span>Chutes · no alvo</span><b>13.5 · 5.4</b></div>
+      <div><span>Escanteios F/S</span><b>5.2 / 3.4</b></div>
+      <div><span>Faltas · amarelos</span><b>10 · 0.7</b></div>
+    </div>
+    <table class=pl><tr><th>Jogador</th><th>Ch</th><th>Alvo</th><th>G</th><th>J</th></tr><tr><td>Cody Gakpo</td><td>25</td><td><b>15</b></td><td>8</td><td>10</td></tr><tr><td>Donyell Malen</td><td>21</td><td><b>9</b></td><td>2</td><td>10</td></tr><tr><td>Tijjani Reijnders</td><td>19</td><td><b>8</b></td><td>3</td><td>9</td></tr><tr><td>Memphis Depay</td><td>11</td><td><b>4</b></td><td>3</td><td>7</td></tr><tr><td>Virgil van Dijk</td><td>10</td><td><b>4</b></td><td>3</td><td>10</td></tr></table>
+    <div class=sparkls>chutes: 10, 10, 15, 17, 2, 14<br>no alvo: 7, 6, 4, 6, 1, 5<br>amarelos: 0, 3, 1, 0, 0, 0</div>
+    </div><div class=tcol><div class=tn style='color:#e0533f'>🇹🇳 Tunísia</div>
+    <div class=qs>
+      <div><span>Gols feitos/sof</span><b>0.9 / 2.1</b></div>
+      <div><span>Over 2.5 · BTTS</span><b>5/10 · 5/10</b></div>
+      <div><span>Clean sheets</span><b>2/10</b></div>
+      <div><span>Chutes · no alvo</span><b>8.6 · 2.6</b></div>
+      <div><span>Escanteios F/S</span><b>4.0 / 5.3</b></div>
+      <div><span>Faltas · amarelos</span><b>14 · 1.5</b></div>
+    </div>
+    <table class=pl><tr><th>Jogador</th><th>Ch</th><th>Alvo</th><th>G</th><th>J</th></tr><tr><td>Hannibal Mejbri</td><td>10</td><td><b>3</b></td><td>0</td><td>7</td></tr><tr><td>Elias Saad</td><td>7</td><td><b>3</b></td><td>0</td><td>7</td></tr><tr><td>Elias Achouri</td><td>4</td><td><b>3</b></td><td>2</td><td>7</td></tr><tr><td>Firas Chaouat</td><td>5</td><td><b>2</b></td><td>1</td><td>7</td></tr><tr><td>Sebastian Tounekti</td><td>4</td><td><b>2</b></td><td>1</td><td>9</td></tr></table>
+    <div class=sparkls>chutes: 2, 6, 7, 14, 4, 11<br>no alvo: 0, 2, 1, 2, 2, 5<br>amarelos: 0, 1, 1, 1, 2, 2</div>
+    </div></div>
+<div class=leit>
+<p><b>🥅 Gols:</b> Holanda máquina (GF 2.5, O2.5 7/10). Tunísia <b>vazada</b> (GA 2.1) e <b>sem ataque</b> (2.6 no alvo o time todo). <b>Holanda vence com folga</b>. Over 2.5 forte.</p>
+<p><b>🎯 Chutes (TIME):</b> Holanda domina (13.5 vs 8.6, e 5.4 no alvo). <b>"Holanda +chutes" e "Holanda +no alvo de TIME"</b> têm lastro (mercado de time, não de jogador — lição aprendida!).</p>
+<p><b>🚩 Escanteios:</b> Holanda mais (5.2 vs 4.0; Tunísia sofre 5.3). <b>"Holanda mais escanteios"</b> sólido.</p>
+<p><b>🟨 Cartões:</b> <b>Tunísia faltosa</b> (13.7 faltas, 1.5 amarelos) → <b>"Tunísia +1.5 cartões"</b> tem valor (cartão = teu ROI +58%).</p>
+<p><b>👤 Artilheiro (cuidado!):</b> Gakpo voa (15 no alvo/10j, 8 gols) — MAS, lição de hoje: prop de jogador é risco (pode sair). Use no máx 1, não empilha.</p>
+<p class=pick>✅ <b>Picks de TIME:</b> Holanda vence · Holanda marca 2+ · Over 2.5 · Holanda mais escanteios · Tunísia +1.5 cartões</p>
+</div>
+<div class=extra><div class=score>🔮 Placar provável: <b>Holanda 3-0</b> ou <b>2-1</b> · tendência <b>Over 2.5</b></div>
+<table class=lines><tr><th>Mercado</th><th>Esperado</th><th>Seguro</th><th>Valor</th><th>Evita</th></tr>
+    <tr><td>Holanda escanteios</td><td><b>~5</b></td><td class=g>+3.5</td><td class=y>+4.5</td><td class=r>+6.5</td></tr>
+    <tr><td>Tunísia escanteios</td><td><b>~4</b></td><td class=g>+2.5</td><td class=y>+3.5</td><td class=r>+5.5</td></tr>
+    <tr><td>Holanda chutes</td><td><b>~14</b></td><td class=g>+12.5</td><td class=y>+13.5</td><td class=r>+15.5</td></tr>
+    <tr><td>Tunísia chutes</td><td><b>~9</b></td><td class=g>+7.5</td><td class=y>+8.5</td><td class=r>+10.5</td></tr>
+    <tr><td>Cartões no jogo</td><td colspan=4 style='text-align:left'><b>~2</b> → linha BAIXA (poucos cartões)</td></tr></table><div class=oddsbox><div class=ob-h>💰 Odds reais — DraftKings</div>
+    <table class=ob><tr><th>Resultado</th><th>Odd</th><th>impl.</th></tr>
+    <tr><td>Holanda vence</td><td>1.11</td><td>90%</td></tr>
+    <tr><td>Empate</td><td>10.0</td><td>10%</td></tr>
+    <tr><td>Tunísia vence</td><td>23.0</td><td>4%</td></tr>
+    <tr><td>Over 3.5 gols</td><td>2.0</td><td>50%</td></tr>
+    <tr><td>Under 3.5 gols</td><td>1.8</td><td>56%</td></tr>
+    <tr><td>Handicap</td><td colspan=2 style='text-align:left'>NED -2.5</td></tr></table>
+    <div class=ob-n>💡 compare a <b>impl.</b> com a minha <b>~%</b> na tabela acima: minha % <b>maior</b> = valor a teu favor.</div></div>
+<table class=prob><tr><th>Aposta-chave (TIME)</th><th>Confiança</th><th>~%</th></tr>
+<tr><td>Holanda vence</td><td class=g>Alta</td><td>~80%</td></tr>
+<tr><td>Holanda marca 2+</td><td class=g>Alta</td><td>~65%</td></tr>
+<tr><td>Over 2.5 gols</td><td class=g>Alta</td><td>~62%</td></tr>
+<tr><td>Holanda mais escanteios</td><td class=g>Alta</td><td>~72%</td></tr>
+<tr><td>Tunísia +1.5 cartões</td><td class=g>Alta</td><td>~68%</td></tr>
+<tr><td>Holanda não sofre gol</td><td class=y>Média</td><td>~50%</td></tr></table>
+</div></div><div class=card><h2>🇸🇪 Suécia × 🇯🇵 Japão <small>20h · vazada vs muralha</small></h2>
+<div class=cols><div class=tcol><div class=tn style='color:#4d8fd6'>🇸🇪 Suécia</div>
+    <div class=qs>
+      <div><span>Gols feitos/sof</span><b>1.7 / 2.2</b></div>
+      <div><span>Over 2.5 · BTTS</span><b>7/10 · 8/10</b></div>
+      <div><span>Clean sheets</span><b>0/10</b></div>
+      <div><span>Chutes · no alvo</span><b>10.7 · 4.3</b></div>
+      <div><span>Escanteios F/S</span><b>4.1 / 5.2</b></div>
+      <div><span>Faltas · amarelos</span><b>11 · 1.4</b></div>
+    </div>
+    <table class=pl><tr><th>Jogador</th><th>Ch</th><th>Alvo</th><th>G</th><th>J</th></tr><tr><td>Viktor Gyökeres</td><td>20</td><td><b>12</b></td><td>6</td><td>7</td></tr><tr><td>Alexander Isak</td><td>14</td><td><b>6</b></td><td>2</td><td>7</td></tr><tr><td>Yasin Ayari</td><td>11</td><td><b>4</b></td><td>2</td><td>9</td></tr><tr><td>Anthony Elanga</td><td>5</td><td><b>4</b></td><td>2</td><td>8</td></tr><tr><td>Alexander Bernhard</td><td>6</td><td><b>3</b></td><td>0</td><td>8</td></tr></table>
+    <div class=sparkls>chutes: 16, 13, 13, 9, 9, 10<br>no alvo: 8, 7, 5, 5, 5, 4<br>amarelos: 3, 0, 0, 1, 2, 1</div>
+    </div><div class=tcol><div class=tn style='color:#d63a3a'>🇯🇵 Japão</div>
+    <div class=qs>
+      <div><span>Gols feitos/sof</span><b>2.0 / 0.4</b></div>
+      <div><span>Over 2.5 · BTTS</span><b>4/10 · 2/10</b></div>
+      <div><span>Clean sheets</span><b>7/10</b></div>
+      <div><span>Chutes · no alvo</span><b>12.2 · 4.8</b></div>
+      <div><span>Escanteios F/S</span><b>4.6 / 4.6</b></div>
+      <div><span>Faltas · amarelos</span><b>12 · 0.8</b></div>
+    </div>
+    <table class=pl><tr><th>Jogador</th><th>Ch</th><th>Alvo</th><th>G</th><th>J</th></tr><tr><td>Ayase Ueda</td><td>7</td><td><b>3</b></td><td>2</td><td>5</td></tr><tr><td>Junya Ito</td><td>6</td><td><b>3</b></td><td>2</td><td>5</td></tr><tr><td>Keito Nakamura</td><td>9</td><td><b>2</b></td><td>1</td><td>5</td></tr><tr><td>Daichi Kamada</td><td>2</td><td><b>2</b></td><td>2</td><td>4</td></tr><tr><td>Koki Ogawa</td><td>4</td><td><b>1</b></td><td>1</td><td>3</td></tr></table>
+    <div class=sparkls>chutes: 11, 10, 15, 7, 18<br>no alvo: 5, 3, 7, 2, 7<br>amarelos: 0, 0, 0, 2, 2</div>
+    </div></div>
+<div class=leit>
+<p><b>🥅 Gols:</b> Choque de estilos: Suécia <b>VAZADÍSSIMA</b> (<b>0 clean sheets em 10!</b>, GA 2.2, BTTS 8/10) vs Japão <b>muralha</b> (7 CS/10, GA 0.4). O Japão é o favorito do jogo. <b>Japão marca (Suécia leva sempre) + tende a não sofrer.</b></p>
+<p><b>🎯 Chutes (TIME):</b> equilibrado (Suécia 10.7 / Japão 12.2). Japão um pouco mais no alvo.</p>
+<p><b>🚩 Escanteios:</b> parelho (Suécia 4.1 / Japão 4.6) — sem aposta clara.</p>
+<p><b>🟨 Cartões:</b> Suécia 1.4, Japão 0.8 — linha média/baixa.</p>
+<p><b>👤 Artilheiro:</b> <b>Gyökeres</b> (Suécia) tá quente (12 no alvo/7j, 6 gols) — mas Japão concede pouco. Prop dele = risco (lição).</p>
+<p class=pick>✅ <b>Picks de TIME:</b> Japão não perde · Japão marca (Suécia 0 CS) · Over 1.5 · cuidado com BTTS (Japão BTTS só 2/10)</p>
+</div>
+<div class=extra><div class=score>🔮 Placar provável: <b>Japão 2-1</b> ou <b>1-0</b> · tendência <b>Over 1.5</b></div>
+<table class=lines><tr><th>Mercado</th><th>Esperado</th><th>Seguro</th><th>Valor</th><th>Evita</th></tr>
+    <tr><td>Suécia escanteios</td><td><b>~4</b></td><td class=g>+2.5</td><td class=y>+3.5</td><td class=r>+5.5</td></tr>
+    <tr><td>Japão escanteios</td><td><b>~5</b></td><td class=g>+3.5</td><td class=y>+4.5</td><td class=r>+6.5</td></tr>
+    <tr><td>Suécia chutes</td><td><b>~11</b></td><td class=g>+9.5</td><td class=y>+10.5</td><td class=r>+12.5</td></tr>
+    <tr><td>Japão chutes</td><td><b>~12</b></td><td class=g>+10.5</td><td class=y>+11.5</td><td class=r>+13.5</td></tr>
+    <tr><td>Cartões no jogo</td><td colspan=4 style='text-align:left'><b>~2</b> → linha BAIXA (poucos cartões)</td></tr></table><div class=oddsbox><div class=ob-h>💰 Odds reais — DraftKings</div>
+    <table class=ob><tr><th>Resultado</th><th>Odd</th><th>impl.</th></tr>
+    <tr><td>Suécia vence</td><td>3.35</td><td>30%</td></tr>
+    <tr><td>Empate</td><td>3.45</td><td>29%</td></tr>
+    <tr><td>Japão vence</td><td>2.2</td><td>45%</td></tr>
+    <tr><td>Over 2.5 gols</td><td>1.83</td><td>55%</td></tr>
+    <tr><td>Under 2.5 gols</td><td>1.95</td><td>51%</td></tr>
+    <tr><td>Handicap</td><td colspan=2 style='text-align:left'>JPN -0.5</td></tr></table>
+    <div class=ob-n>💡 compare a <b>impl.</b> com a minha <b>~%</b> na tabela acima: minha % <b>maior</b> = valor a teu favor.</div></div>
+<table class=prob><tr><th>Aposta-chave (TIME)</th><th>Confiança</th><th>~%</th></tr>
+<tr><td>Japão não perde</td><td class=g>Alta</td><td>~68%</td></tr>
+<tr><td>Japão marca (Suécia 0 CS)</td><td class=g>Alta</td><td>~72%</td></tr>
+<tr><td>Over 1.5 gols</td><td class=g>Alta</td><td>~70%</td></tr>
+<tr><td>Japão vence</td><td class=y>Média</td><td>~48%</td></tr>
+<tr><td>Over 2.5 gols</td><td class=y>Média</td><td>~52%</td></tr>
+<tr><td>Ambas marcam</td><td class=y>Média</td><td>~50%</td></tr></table>
+</div></div><div class='card combos'><h2>🎲 Combinadas (mercados de TIME — lição aplicada)</h2>
+<div class=tier><span class=t1>TIER 1 — Âncoras</span> Holanda vence (Tunísia fraca) · Japão não perde</div>
+<div class=tier><span class=t2>TIER 2 — Sólidas</span> Holanda marca 2+ · Over 2.5 Holanda×Tunísia · Holanda mais escanteios · Tunísia +1.5 cartões · Japão marca</div>
+<div class=tier><span class=t3>TIER 3 — Valor</span> Over 1.5 Suécia×Japão · Holanda não sofre gol · Japão vence</div>
+<hr>
+<div class=cb><b>🟢 SEGURA (~3-4x)</b><br>Holanda vence · Japão não perde<br><small>dois favoritos, sem prop de jogador</small></div>
+<div class=cb><b>🟡 EQUILIBRADA (~6-8x) ⭐</b><br>Holanda vence · Japão não perde · Tunísia +1.5 cartões<br><small>favorito + favorito + cartão de time (+58% ROI). TUDO mercado de time!</small></div>
+<div class=cb><b>🟠 GOLS/TIME (~5-7x)</b><br>Over 2.5 Holanda×Tunísia · Holanda mais escanteios · Japão marca<br><small>Holanda atropela + Suécia sempre leva gol</small></div>
+<div class=cb><b>🔴 OUSADA (~9-12x)</b><br>Holanda marca 2+ · Over 2.5 Holanda×Tun · Japão vence · Tunísia +1.5 cartões</div>
+</div><div class='card warn'><h2>⚠️ Disciplina (lições do Grupo E!)</h2>
+<p>✅ <b>Foco em TIME:</b> Holanda vence + Japão não perde (favoritos = +46%) · <b>Tunísia +1.5 cartões</b> (cartão = +58%) · Holanda mais escanteios/marca 2+ · Over 2.5 Holanda×Tun. <b>Tudo mercado que NÃO some do jogo.</b></p>
+<p>🔴 <b>O que evitar (aprendido na marra):</b> <b>prop de jogador</b> ("Gakpo/Gyökeres 1+ no alvo" — o cara pode SAIR como o Wirtz!) · <b>empilhar a mesma perna</b> em tudo · "2+ no alvo" de jogador (categoria 0%) · passar de 12x.</p>
+</div>
+<div class='card'><h2>📖 Glossário & como ler</h2><div class=gloss>
+<b>Esperado</b> = média do time nos últimos jogos. <b>Seguro</b> = linha com alta chance (~75%+). <b>Valor</b> = linha equilibrada (~55-60%). <b>Evita</b> = linha esticada (baixa chance).<br>
+<b>No alvo</b> = chute no gol. <b>CS</b> = clean sheet (não sofreu gol). <b>BTTS</b> = ambas marcam.<br>
+<b>Confiança Alta</b> 🟢 = base de combinada · <b>Média</b> 🟡 = soma com cuidado · use no máx 1 perna de Tier 3.<br>
+⚠️ Dados: Holanda/Tunísia/Suécia com 10 jogos (confiável); <b>Japão só 5 jogos</b> (médias menos firmes).</div></div>
+<footer>Chutes · no alvo · escanteios · faltas · cartões · jogadores · linhas esperadas · probabilidades — confira odds e escalação antes de apostar 🍀</footer>
+</body></html>
