@@ -4,121 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>🏆 Painel Copa 2026 — Leo</title>
+<meta name="theme-color" content="#0d1326">
+<title>🏆 Copa 2026 — Meu Bolão</title>
 <style>
   :root{ --bg:#0d1326; --card:#161e38; --card2:#1c2547; --txt:#e8ecf8; --muted:#8b96b8;
-    --accent:#36e0a1; --bet:#ffd166; --red:#e74c3c; --green:#2ecc71; }
+    --green:#2ecc71; --accent:#36e0a1; --bet:#ffd166; }
   *{ margin:0; padding:0; box-sizing:border-box; }
-  body{ background:var(--bg); color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif;
-    min-height:100vh; padding:26px 16px 40px; max-width:560px; margin:0 auto; }
-  h1{ font-size:1.6rem; text-align:center; margin-bottom:3px; }
-  .sub{ color:var(--muted); text-align:center; margin-bottom:22px; font-size:.88rem; }
-  .secao{ color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.06em;
-    margin:22px 0 9px 4px; font-weight:700; display:flex; align-items:center; gap:7px; }
-  .secao::after{ content:''; flex:1; height:1px; background:#243056; }
-  a.card{ display:flex; align-items:center; gap:13px; background:var(--card); border-radius:14px;
-    padding:15px 16px; text-decoration:none; color:var(--txt); margin-bottom:10px;
-    box-shadow:0 3px 12px rgba(0,0,0,.3); border:1px solid #243056; transition:transform .12s, border-color .12s; }
+  body{ background:
+      radial-gradient(1200px 500px at 50% -10%, #16245a 0%, transparent 60%),
+      var(--bg);
+    color:var(--txt); font-family:-apple-system,'Segoe UI',Roboto,sans-serif;
+    min-height:100vh; padding:36px 18px 48px; display:flex; flex-direction:column; align-items:center; }
+  .hero{ text-align:center; margin-bottom:8px; }
+  .hero .trophy{ font-size:3rem; line-height:1; }
+  h1{ font-size:1.85rem; margin:6px 0 2px; letter-spacing:.3px; }
+  .hero .sub{ color:var(--muted); font-size:.95rem; }
+  .champ{ margin:16px 0 4px; }
+  .champ span{ background:linear-gradient(90deg,#0a4d2e,#0e6b3f); padding:7px 18px; border-radius:22px;
+    border:1px solid var(--accent); font-weight:700; font-size:1rem; }
+  .status{ width:100%; max-width:520px; margin:18px 0 6px; background:var(--card);
+    border:1px solid #243056; border-radius:14px; padding:14px 16px; }
+  .status .line{ display:flex; justify-content:space-between; align-items:center; gap:10px;
+    font-size:.9rem; padding:5px 0; }
+  .status .line + .line{ border-top:1px solid #232f55; }
+  .status .k{ color:var(--muted); }
+  .status .v{ font-weight:700; text-align:right; }
+  .status .v .ex{ color:var(--green); } .status .v .re{ color:var(--bet); }
+  .menu{ width:100%; max-width:520px; display:flex; flex-direction:column; gap:14px; margin-top:18px; }
+  a.card{ display:flex; align-items:center; gap:14px; background:var(--card); border-radius:16px;
+    padding:18px 20px; text-decoration:none; color:var(--txt); border:1px solid #243056;
+    box-shadow:0 4px 16px rgba(0,0,0,.35); transition:transform .12s, border-color .12s; }
   a.card:active{ transform:scale(.985); }
-  a.card .emoji{ font-size:1.7rem; flex-shrink:0; width:34px; text-align:center; }
-  a.card .txt{ flex:1; }
-  a.card .ttl{ font-size:1.05rem; font-weight:700; color:var(--accent); }
-  a.card.bet .ttl{ color:var(--bet); }
-  a.card.live .ttl{ color:#ff6b6b; }
-  a.card .desc{ color:var(--muted); font-size:.8rem; line-height:1.35; margin-top:2px; }
-  a.card .arrow{ color:var(--muted); font-size:1.1rem; }
-  .destaque{ border-color:var(--accent); background:linear-gradient(135deg,#10261a,#13233f); }
-  .note{ background:var(--card); border-radius:11px; padding:12px 14px; font-size:.76rem;
-    color:var(--muted); line-height:1.5; margin-top:8px; border-left:3px solid var(--bet); }
-  .note b{ color:var(--txt); }
-  footer{ color:var(--muted); font-size:.72rem; margin-top:26px; text-align:center; line-height:1.6; }
+  a.card:hover{ border-color:var(--accent); }
+  a.card .ic{ font-size:2rem; flex-shrink:0; width:46px; text-align:center; }
+  a.card .tt{ font-size:1.15rem; font-weight:700; color:var(--accent); }
+  a.card.bet .tt{ color:var(--bet); }
+  a.card .ds{ color:var(--muted); font-size:.83rem; line-height:1.4; margin-top:2px; }
+  a.card .arr{ margin-left:auto; color:var(--muted); font-size:1.3rem; }
+  footer{ color:var(--muted); font-size:.78rem; margin-top:30px; text-align:center; line-height:1.6; }
 </style>
 </head>
 <body>
-  <h1>🏆 Painel Copa 2026</h1>
-  <p class="sub">Apostas, banca, análises e bolão — tudo num lugar</p>
+  <div class="hero">
+    <div class="trophy">🏆</div>
+    <h1>Copa do Mundo 2026</h1>
+    <div class="sub">Meu Bolão, Apostas & Jogos</div>
+  </div>
+  <div class="champ">Meu campeão: <span>🇧🇷 BRASIL</span></div>
 
-  <div class="secao">🔴 Agora — Mata-mata</div>
-  <a class="card destaque live" href="matamata.html">
-    <div class="emoji">🏆</div>
-    <div class="txt">
-      <div class="ttl">Análises do Mata-mata</div>
-      <div class="desc">Round of 32 — jogo a jogo de cada time, ataque + defesa (chutes sofridos), jogadores e picks de TIME. Começa Canadá×África do Sul.</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-
-  <div class="secao">💰 Controle</div>
-  <a class="card" href="central.html">
-    <div class="emoji">⚽</div>
-    <div class="txt">
-      <div class="ttl">Central de Apostas</div>
-      <div class="desc">3 abas: Jogos (seletor) · Banca (saldo + gráfico) · Combinadas (do dia + tiers).</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card bet" href="banca.html">
-    <div class="emoji">💰</div>
-    <div class="txt">
-      <div class="ttl">Banca</div>
-      <div class="desc">Saldo separado: curto prazo (jogo a jogo) × longo prazo (futuros) × total. Gráfico, ROI e histórico.</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card" href="bolao.html">
-    <div class="emoji">📊</div>
-    <div class="txt">
-      <div class="ttl">Bolão &amp; Palpites</div>
-      <div class="desc">Palpites por grupo, placar do bolão, classificações e os bilhetes.</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-
-  <div class="secao">🎯 Planos de aposta</div>
-  <a class="card bet" href="plano-f.html">
-    <div class="emoji">🎯</div>
-    <div class="txt">
-      <div class="ttl">Plano — Grupo F</div>
-      <div class="desc">9 apostas só de TIME (odds reais), com stakes e retorno. Lições do Grupo E aplicadas.</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card bet" href="plano-e.html">
-    <div class="emoji">🎯</div>
-    <div class="txt">
-      <div class="ttl">Plano — Grupo E</div>
-      <div class="desc">Apostas montadas com odds reais, todas ≥3x, algumas fecham no 1º tempo.</div>
-    </div>
-    <div class="arrow">→</div>
-  </a>
-
-  <div class="secao">📈 Análises de grupo</div>
-  <a class="card" href="grupo-f.html">
-    <div class="emoji">🇳🇱</div>
-    <div class="txt"><div class="ttl">Grupo F</div><div class="desc">Holanda×Tunísia · Suécia×Japão — foco em mercados de time.</div></div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card" href="grupo-e.html">
-    <div class="emoji">🇩🇪</div>
-    <div class="txt"><div class="ttl">Grupo E</div><div class="desc">Alemanha×Equador · Costa do Marfim×Curaçao.</div></div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card" href="grupo-c.html">
-    <div class="emoji">🇧🇷</div>
-    <div class="txt"><div class="ttl">Grupo C</div><div class="desc">Brasil×Escócia · Marrocos×Haiti.</div></div>
-    <div class="arrow">→</div>
-  </a>
-  <a class="card" href="grupo-a.html">
-    <div class="emoji">🇲🇽</div>
-    <div class="txt"><div class="ttl">Grupo A</div><div class="desc">México×Tchéquia · Coreia×África do Sul.</div></div>
-    <div class="arrow">→</div>
-  </a>
-
-  <div class="note">
-    💡 <b>O "ao vivo" (tracker das apostas)</b> roda só no computador do Leo (atualiza sozinho com os dados da ESPN) — não vai pro site por limitação técnica (CORS). Aqui ficam os painéis fixos.<br><br>
-    🐓 <b>Lição-mãe da Copa:</b> apostas de <b>TIME</b> (resultado, escanteios, cartões, gols, chutes de time) pagam; <b>props de jogador "no gol"</b> matam (o craque sai ou não acerta o alvo).
+  <div class="status">
+    <div class="line"><span class="k">📊 Bolão (fase de grupos)</span>
+      <span class="v"><span class="ex">🎯 6</span> exatos · <span class="re">✅ 40</span> resultados</span></div>
+    <div class="line"><span class="k">🗓️ Fase atual</span>
+      <span class="v">Mata-mata — 16-avos</span></div>
+    <div class="line"><span class="k">⚽ Próximo do Brasil</span>
+      <span class="v">🇧🇷 Brasil × Japão 🇯🇵 · 29/06</span></div>
   </div>
 
-  <footer>Painel pessoal do Leo · gerado localmente · atualizado a cada publicação 🍀</footer>
+  <div class="menu">
+    <a class="card" href="bolao.html">
+      <div class="ic">📊</div>
+      <div><div class="tt">Bolão &amp; Apostas</div>
+        <div class="ds">Palpites por grupo, placares, classificações, 16-avos e os bilhetes.</div></div>
+      <div class="arr">›</div>
+    </a>
+    <a class="card" href="central.html">
+      <div class="ic">⚽</div>
+      <div><div class="tt">Central de Jogos</div>
+        <div class="ds">Hub com os jogos da Copa 2026.</div></div>
+      <div class="arr">›</div>
+    </a>
+    <a class="card bet" href="banca.html">
+      <div class="ic">💰</div>
+      <div><div class="tt">Banca</div>
+        <div class="ds">Controle da banca de apostas.</div></div>
+      <div class="arr">›</div>
+    </a>
+  </div>
+
+  <footer>Atualizado em 27/06/2026 · gerado por gen_bolao.py<br>🇧🇷 Vai, Brasil! 🍀</footer>
 </body>
 </html>
